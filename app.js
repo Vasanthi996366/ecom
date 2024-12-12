@@ -26,7 +26,7 @@ const port=4300;
 app.listen(port,()=>{
   console.log("server running at http://localhost:"+port+"/")
 })
-mongoose.connect('mongodb://localhost:27017/desktop')
+mongoose.connect('mongodb+srv://gaddevasanthireddy:9963@cluster0.7x7uc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
  .then(()=>{console.log("connected to DB")})
  .catch((err)=>{console.log(err)})
 // catch 404 and forward to error handler
